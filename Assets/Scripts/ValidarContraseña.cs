@@ -16,6 +16,7 @@ public class ValidarContraseña : MonoBehaviour
     {
         contraseñaCorrecta = "12345";
         cartelMensaje.SetActive(false);
+        validarContraseña(cartelMensaje);
     }
 
     // Update is called once per frame
@@ -24,7 +25,7 @@ public class ValidarContraseña : MonoBehaviour
         
     }
 
-    public void validarContraseña()
+    public void validarContraseña(GameObject cartelMensaje)
     {
         contraUser = ingresoUser.text;
         if (contraUser == contraseñaCorrecta)
