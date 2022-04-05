@@ -23,18 +23,25 @@ public class ValidarContraseña : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    public void validarcontraseña()
+    {
+
         contraseñaUsr = ingresoUsr.text;
         if (contraseñaUsr == contraseñaCorrecta)
         {
             cartelMensaje.SetActive(true);
             textoMensaje.text = "Bienvenido";
             Debug.Log("Bienvenido");
-        }   
+        }
         else
         {
             cartelMensaje.SetActive(true);
             textoMensaje.text = "Contraseña incorrecta";
             Debug.Log("Contraseña incorrecta");
         }
+
     }
 }
